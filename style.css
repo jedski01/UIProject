@@ -3,6 +3,7 @@ body{
 	color: #E0E0E0;
     margin: 0px;
     font-family: "Lato", "sans-serif";
+    font-size: 10pt;
 }
 
 h1{
@@ -18,7 +19,7 @@ li{
 
 #navbar {
     height: 54px;
-    display: flex
+    display: flex;
 }
 
 .container {
@@ -27,6 +28,8 @@ li{
 }
 
 .nav_item {
+    font-family: "Lato", "sans-serif";
+    font-size: 11pt;
     display: inline-block;
     height: 46px;
     line-height: 50px;
@@ -146,4 +149,34 @@ input[type=radio]:checked + label {
 #footer {
     font-size: 10pt;
     margin-top: 50px;
+}
+
+#question_box {
+    font-family: "Open Sans", "sans serif"
+}
+
+#question_box h4{
+    color: #F87431;
+    font-size: 12pt;
+}
+
+#question_box h4:hover{
+    cursor: pointer;
+}
+
+#question_box p{
+    text-indent: 50px;
+    font-family: "Open Sans", "sans serif";
+    font-size: 10pt;
+    display: none;
+}
+
+.user {
+    font-size: 14pt;
+    font-family: "Lato", "sans serif";
+}
+
+.review {
+    text-indent: 15px;
+    font-family: "Open Sans", "sans serif";
 }
