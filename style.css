@@ -1,0 +1,149 @@
+body{
+	background-color: black;
+	color: #E0E0E0;
+    margin: 0px;
+    font-family: "Lato", "sans-serif";
+}
+
+h1{
+    font-family: "Play", "sans serif"    
+}
+
+li{
+    line-height: 2em;
+    list-style-type: square;
+    font-family: "Open Sans", "sans-serif";
+    font-size: 10pt;
+}
+
+#navbar {
+    height: 54px;
+    display: flex
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.nav_item {
+    display: inline-block;
+    height: 46px;
+    line-height: 50px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    border: 4px;
+    transition: border-bottom .1s linear;
+    color: #E0E0E0;
+    background-color: #1F1E1C;
+}
+
+.nav_item:hover{
+    border-bottom: 4px solid white;
+    color: white;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+
+input[type=radio]:checked + label {
+  border-bottom: 4px solid #F87431;
+} 
+
+.nav_title {
+    display:inline-block;
+    flex: auto;
+    line-height: 50px;
+    font-family: "Play", "sans-serif";
+    font-size: 24pt;
+    
+    color: #F87431;
+}
+
+#banner {
+    height: 155px;
+}
+
+#main_content {
+    font-family: "Lato", "sans-serif";
+    margin-top: 50px;
+    min-height: 900px;
+}
+
+.feature_image {
+    width: 40%;
+    display: inline-block;
+    height: 300px;
+}
+
+#feature_summary {
+    width: 60%;
+    display: inline-block;
+    height: 300px;
+    
+}
+
+#feature_summary p{
+    font-family: "Open Sans", "sans-serif";
+    font-size: 10pt;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: 40px;
+    line-height: 1.7em
+}
+
+#feature_box {
+    display: flex;
+}
+
+.feature_title {
+    padding: 5px 0px 0px 5px;
+    font-family: "Play";
+    font-size: 20pt
+}
+
+.navbar_bg {
+    position: absolute;
+    background-color: #1F1E1C;
+    width: 100vw;
+    height: 50px;
+    z-index: -1;
+}
+
+#buy_div {
+    margin-top: 50px;
+    position: relative;
+    height: 100px
+}
+
+#buy_button {
+    position: absolute;
+    right: 0px;
+    display: inline-block;
+    padding: 10px;
+    font-family: "Play";
+    font-size: 14pt;
+    background-color: #ad5122;
+    cursor: pointer;
+}
+
+#buy_button:hover{
+    background-color: #F87431;
+}
+
+#buy_price {
+    font-weight: bold;
+    font-size: 20pt;
+    font-family: "Play";
+    text-align: right;
+    padding-bottom: 15px;
+}
+
+
+#footer {
+    font-size: 10pt;
+    margin-top: 50px;
+}
