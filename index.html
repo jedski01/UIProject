@@ -21,8 +21,12 @@
        <label for="testimonials" class="nav_item">TESTIMONIALS</label>
        <input type="radio" name="menu" id="support"/>
         <label for="support" class="nav_item">SUPPORT</label>
-       <input type="radio" name="menu" id="cart"/>
-       <label for="cart" class="nav_item">CART</label>
+       
+       <div id="cart">
+           CART
+           <img src="images/exc.png" alt="" width="25px"/>
+        </div>
+       <div id="buy_button_nav" class="button" style="margin-top:5px">BUY NOW</div>
     </div>
     
     <div id="main_content" class="container">
@@ -40,7 +44,35 @@
                E1Q-2F7<br />
                Canada<br />
            </p>
-        
+    </div>
+    
+    <div id="buy_window">
+        <h1>CART</h1>
+        <table width="100%">
+            <colgroup>
+                <col style="width:20%" />
+                <col style="width:60%"  />
+                <col style="width:20%" />
+            </colgroup>
+
+            <tbody>
+                <tr>
+                  <td>Quantity</td>
+                  <td>Product</td>
+                  <td>Price</td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="1"/></td>
+                    <td><h1>eGlasses</h1></td>
+                    <td><h1>$350.00</h1></td>
+                </tr>
+            </tbody>
+           
+        </table>
+        <hr style="width:100%"/>       
+        <div id="total_price"><h1 style="text-align:right">$350.00</h1></div>
+        <div id="checkout" class="button">CHECKOUT ></div>
+        <img src="images/close.png" alt="" id="close"/>
     </div>
     <script src="myjs.js"></script>
 </body>
