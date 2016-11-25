@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>eGlasses - Order Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato|Play|Open+Sans">
+    <link rel="stylesheet" href="orderstyle.css" type="text/css"/>
+</head>
+<body>
+   
+    <div class="container">
+       <div id="order_step">
+           <span class="step step_done">CART, BILLING AND SHIPPING INFO</span> > 
+           <span class="step step_not_done">SUMMARY</span> > 
+           <span class="step step_not_done">ORDER COMPLETE</span></div>
+       <div id="main_content">
+            <span style="font-weight:bold;font-size:14pt">Order No : 100039245</span>
+            <hr />
+            <div style="text-align:right">
+                <a href="index.html">&lt; Go back to product page</a>
+            </div>
+            <span class="error">*Problem processing credit card information. Please check and try again</span>
+            <h1>Cart</h1>
+            <table style="width:900px">
+               <col style="width:250px"/>
+               <col style="width:350px"/>
+               <col style="width:350px"/>
+                <tr>
+                    <td>Quantity <input type="number" style="width:40px" value="1"/> <img id="refresh" src="images/refresh.png" alt="" /></td>
+                    <td><h3>eGlasses</h3></td>
+                    <td><h3>$350.00</h3></td>
+                </tr>
+            </table>
+            <div>
+                Estimated shipping:
+                <select name="country" style="margin-left: 25px;">
+                    <option value="canada">Canada</option>
+                </select>
+                <select name="method" style="margin-left: 25px;"> 
+                    <option value="domestic_e">Domestic Economy (3-7) Bussiness days</option>
+                </select>
+                <span style="margin-left:58px">$45.00</span>
+            </div>
+            <div>
+                <h4 style="display:inline-block; margin-left:468px">Subtotal</h4> <span style="margin-left:40px;font-size:14pt;font-weight:bold">$390.00</span>
+            </div>
+            <div style="padding: 50px 10px 10px 10px;width:400px;text-align:center"><img src="images/PayPal.png" alt=""  style="width:300px;cursor:pointer;text-align:right"/><br /> or  <br />continue below</div>
+            
+            <h1>Billing and Shipping Information</h1>
+            * - Required fields
+            <table id="billing_shipping">
+                <col style="width:50%"/>
+                <col style="width:50%"/>
+                <tr>
+                    <td><h3>Billing Info</h3></td>
+                    <td><h3>Shipping Info</h3></td>
+                </tr>
+                <tr>
+                    <td>First name* <span class="error">Please enter your first name</span></td>
+                    <td>First name* <span class="error">Please enter your first name</span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="short_input"/></td>
+                    <td><input type="text" class="short_input"/></td>
+                </tr>
+                <tr>
+                    <td>Last name* <span class="error">Please enter your last name</span></td>
+                    <td>Last name* <span class="error">Please enter your last name</span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="short_input"/></td>
+                    <td><input type="text" class="short_input"/></td>
+                </tr>
+                <tr>
+                    <td>Phone number* <span class="error">Please enter your phone number</span></td>
+                    <td>Phone number* <span class="error">Please enter your phone number</span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="short_input"/></td>
+                    <td><input type="text" class="short_input"/></td>
+                </tr>
+                <tr>
+                    <td>Address line 1*<span class="error">Please enter your address</span></td>
+                    <td>Address line 1*<span class="error">Please enter your address</span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="long_input"/></td>
+                    <td><input type="text" class="long_input"/></td>
+                </tr>
+                <tr>
+                    <td>Address line 2</td>
+                    <td>Address line 2</td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="long_input"/></td>
+                    <td><input type="text" class="long_input"/></td>
+                </tr>
+                <tr>
+                    <td>City*</td>
+                    <td>City*</td>
+                </tr>
+                <tr>
+                    <td>
+                       <select name="city" id="city">
+                            <option value="vancouver">Vancouver</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="city" id="city">
+                            <option value="vancouver">Vancouver</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>State Province*</td>
+                    <td>State Province*</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="state" id="state">
+                            <option value="BC">BC</option>
+                            <option value="AB">AB</option>
+                            <option value="CA">CA</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="state" id="state">
+                            <option value="BC">BC</option>
+                            <option value="AB">AB</option>
+                            <option value="CA">CA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country*</td>
+                    <td>Country*</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="canada">Canada</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="canada">Canada</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email address*</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="short_input"/></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Verify email address*</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="short_input"/></td>
+                    <td></td>
+                <tr>
+            </table>
+            <input type="checkbox" /> Shipping info same as billing
+            
+            <h1>Payment info</h1>
+            <input type="radio" name="payment" value="cc" checked="checked"/>Credit Card <span class="error">Please enter all credit card information</span><br />
+            <img src="images/maestro.png" alt="" />
+            <img src="images/mastercard.png" alt="" />
+            <img src="images/visa.png" alt="" />
+            <br /><br />
+            <table>
+                <tr>
+                    <th>Credit Card Number*</th>
+                    <th>Expiration*</th>
+                    <th>Security Code*</th>
+                </tr>
+                <tr>
+                    <td><input type="text" /></td>
+                    <td>Month<select name="month" id="">
+                    	<option value="">January</option>
+                    	<option value="">February</option>
+                    	<option value="">March</option>
+                    	<option value="">April</option>
+                    	<option value="">May</option>
+                    	<option value="">June</option>
+                    	<option value="">July</option>
+                    	<option value="">August</option>
+                    	<option value="">September</option>
+                    	<option value="">October</option>
+                    	<option value="">November</option>
+                    	<option value="">December</option>
+                    </select>
+                    Year <select name="year" id="">
+                    	<option value="">2016</option>
+                    	<option value="">2017</option>
+                    	<option value="">2018</option>
+                    	<option value="">2019</option>
+                    	<option value="">2020</option>
+                    </select>
+                    </td>
+                    <td><input type="text" /></td>
+                </tr>
+            </table>
+            <br />
+            <input type="radio" name="payment" value="paypal" />Paypal
+            <div id="continue" class="button">CONTINUE</div>
+       </div>
+    </div>
+    
+</body>
+</html>

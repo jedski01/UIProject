@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato|Play|Open+Sans">
     <link rel="stylesheet" href="style.css" type="text/css"/>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
    <div id="banner" class="container"></div>
@@ -34,8 +34,6 @@
     </div>
     
     <div id="footer" class="container">
-            
-        
            <p>
               <img src="images/logo.png" style="width: 90px; height: 90px; float:left; padding-right: 15px" alt="" />
                <span style="font-weight: bold;font-size:14pt;">Axio Industries</span> <br />
@@ -45,6 +43,7 @@
                Canada<br />
            </p>
     </div>
+    <div id="footer_bar"></div>
     
     <div id="buy_window">
         <h1>CART</h1>
@@ -73,7 +72,12 @@
         <div id="total_price"><h1 style="text-align:right">$350.00</h1></div>
         <div id="checkout" class="button">CHECKOUT ></div>
         <img src="images/close.png" alt="" id="close"/>
+        <div id="processing_text">
+            <span style="margin-right:15px;font-size:15pt;font-style:italic">Processing</span>
+            <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
+        </div>
     </div>
+    
     <script src="myjs.js"></script>
 </body>
 </html>

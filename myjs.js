@@ -8,7 +8,9 @@ var cart = document.getElementById("cart");
 var close_button = document.getElementById("close");
 var buy_window = document.getElementById("buy_window");
 var buy_button_nav = document.getElementById("buy_button_nav");
-
+var checkout = document.getElementById("checkout");
+var processing_text = document.getElementById("processing_text");
+var button_clicked;
 
 function response(){
     console.log("Ready!");
@@ -113,4 +115,16 @@ cart.onclick = function(){
 
 buy_button_nav.onclick = function(){
     buy_window.style.visibility = "visible";
+}
+
+checkout.onclick = function(){
+    if(button_clicked==null){
+        processing_text.style.visibility = "visible";
+        button_clicked = setTimeout(goto_orderpage,2000);
+    }
+        
+}
+
+function goto_orderpage(){
+    window.location.href = "orderpage.html";
 }
