@@ -45,8 +45,8 @@ li{
 }
 
 .nav_item:hover{
-    border-bottom: 4px solid white;
-    color: white;
+    border-bottom: 4px solid #E0E0E0;
+    color: #E0E0E0;
 }
 
 input[type=radio]{
@@ -54,7 +54,7 @@ input[type=radio]{
 }
 
 
-input[type=radio]:checked + label {
+input[type=radio]:checked + label.nav_item {
   border-bottom: 4px solid #F87431;
 } 
 
@@ -83,6 +83,9 @@ input[type=radio]:checked + label {
     width: 40%;
     display: inline-block;
     height: 300px;
+    background-image: url('images/video.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
 
 #feature_summary {
@@ -94,7 +97,7 @@ input[type=radio]:checked + label {
 
 #feature_summary p{
     font-family: "Open Sans", "sans-serif";
-    font-size: 14pt;
+    font-size: 12pt;
     margin-left: 15px;
     margin-right: 20px;
     margin-top: 40px;
@@ -109,6 +112,7 @@ input[type=radio]:checked + label {
     padding: 5px 0px 0px 5px;
     font-family: "Play";
     font-size: 20pt;
+    color: #F87431;
 }
 
 .navbar_bg {
@@ -127,7 +131,7 @@ input[type=radio]:checked + label {
 
 #buy_button {
     position: absolute;
-    right: 0px;
+    right: 50px;
     
 }
 
@@ -138,12 +142,13 @@ input[type=radio]:checked + label {
     font-family: "Play";
     text-align: right;
     padding-bottom: 15px;
+    margin-right: 50px;
 }
 
 
 #footer {
     font-size: 12pt;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 #question_box {
@@ -264,4 +269,157 @@ input[type=radio]:checked + label {
 	width: 100vw;
 	height: 30px;
 	background-color: #1F1E1C;
+}
+
+#testimonials_container {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+#infographic{
+    width: 100%;
+    height: 400px;
+    background-color: #1f1e1c;
+}
+
+#info_container {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+
+#info_desc {
+    width: 30%;
+    height: 100%;
+    background-color: #1f1e1c;
+    float: left;
+}
+
+#profile_navbar {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(31,30,28)
+}
+
+.profile_link {
+    cursor: pointer;
+    padding: 0px 5px 0px 5px;
+    font-size: 12pt;    
+}
+
+input[type="radio"]:checked + label.profile_link{
+    color: black;
+    background-color: #F87431;
+    color: white;
+    text-shadow: 1px 1px #000;
+}
+
+.info_button {
+    padding: 5px;
+    border: 2px solid red;
+    border-radius: 0px;
+    color: black;
+    font-size: 11pt;
+    cursor: pointer;
+    transition: border-radius .2s linear;
+}
+
+.info_button:hover{
+    border-radius: 10px;
+}
+
+#info_image {
+    position: relative;
+}
+
+#frame_button {
+    position: absolute;
+    bottom: 60px;
+    left: 175px;
+}
+
+#camera_button {
+    position: absolute;
+    bottom: 60px;
+    left: 385px;
+}
+
+#lens_button {
+    position: absolute;
+    bottom: 60px;
+    right: 195px;
+}
+
+#battery_button {
+    position: absolute;
+    bottom: 100px;
+    left: 305px;
+    
+}
+
+#mode_button {
+    position: absolute;
+    top: 48px;
+    right: 82px;
+}
+
+#capture_button {
+    position: absolute;
+    bottom: 65px;
+    left: 127px;
+}
+
+#ID_button {
+    position: absolute;
+    top: 40px;
+    right: 105px;
+}
+
+#led_button {
+    position: absolute;
+    top: 125px;
+    left: 330px;
+}
+
+#power_button {
+    position: absolute;
+    bottom: 150px;
+    left: 375px;
+}
+
+#usb_button {
+    position: absolute;
+    top: 50px;
+    right: 295px;
+}
+
+#arm_button {
+    position: absolute;
+    bottom: 98px;
+    right: 335px;
+}
+
+#et_button {
+    position: absolute;
+    bottom: 47px;
+    right: 350px;
+}
+
+#spec_title {
+    font-family: "Play", "sans-serif";
+    font-size: 20pt;
+    font-weight: normal;
+    color: #F87431;
+    margin-left: 15px;
+}
+
+#spec_info {
+    margin-left: 15px;
+    font-size: 12pt;
+    margin-right: 15px;
+}
+
+#buy_button_nav {
+    margin-top:5px
 }

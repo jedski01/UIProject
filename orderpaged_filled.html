@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato|Play|Open+Sans">
     <link rel="stylesheet" href="orderstyle.css" type="text/css"/>
-    
+    <script src="order.js"></script>
 </head>
 <body>
    
@@ -57,44 +57,44 @@
                     <td><h3>Shipping Info</h3></td>
                 </tr>
                 <tr>
-                    <td>First name* <p id="error_fname_b" class="error"></p></td>
-                    <td>First name* <p id="error_fname_s" class="error"></p></td>
+                    <td>First name*</td>
+                    <td>First name*</td>
                 </tr>
                 <tr>
-                    <td><input type="text" id="fname_b" class="short_input"/></td>
-                    <td><input type="text" id="fname_s" class="short_input"/></td>
+                    <td><input type="text" class="short_input" value="Ann"/></td>
+                    <td><input type="text" class="short_input" value="Ann"/></td>
                 </tr>
                 <tr>
-                    <td>Last name* <p id="error_lname_b" class="error"></p></td>
-                    <td>Last name* <p id="error_lname_s" class="error"></p></td>
+                    <td>Last name*</td>
+                    <td>Last name*</td>
                 </tr>
                 <tr>
-                    <td><input type="text" id="lname_b" class="short_input"/></td>
-                    <td><input type="text" id="lname_s" class="short_input"/></td>
+                    <td><input type="text" class="short_input" value="McDonald"/></td>
+                    <td><input type="text" class="short_input" value="McDonald"/></td>
                 </tr>
                 <tr>
-                    <td>Phone number* <p id="error_phone_b" class="error"></p></td>
-                    <td>Phone number* <p id="error_phone_s" class="error" ></p></td>
+                    <td>Phone number*</td>
+                    <td>Phone number*</td>
                 </tr>
                 <tr>
-                    <td><input type="text" id="phone_b" class="short_input" placeholder="604-123-4567"/></td>
-                    <td><input type="text" id="phone_s" class="short_input" placeholder="604-123-4567"/></td>
+                    <td><input type="text" class="short_input" value="250-334-6156"/></td>
+                    <td><input type="text" class="short_input" value="250-334-6156"/></td>
                 </tr>
                 <tr>
-                    <td>Address line 1* <p id="error_address_b" class="error"></p></td>
-                    <td>Address line 1* <p id="error_address_s" class="error"></p></td>
+                    <td>Address line 1*</td>
+                    <td>Address line 1*</td>
                 </tr>
                 <tr>
-                    <td><input type="text" id="address_b" class="long_input"/></td>
-                    <td><input type="text" id="address_s" class="long_input"/></td>
+                    <td><input type="text" class="long_input" value="1127 Roger Street"/></td>
+                    <td><input type="text" class="long_input" value="1127 Roger Street"/></td>
                 </tr>
                 <tr>
                     <td>Address line 2</td>
                     <td>Address line 2</td>
                 </tr>
                 <tr>
-                    <td><input type="text" class="long_input" id="optional_address_b"/></td>
-                    <td><input type="text" class="long_input" id="optional_address_s"/></td>
+                    <td><input type="text" class="long_input"/></td>
+                    <td><input type="text" class="long_input"/></td>
                 </tr>
                 <tr>
                     <td>City*</td>
@@ -102,19 +102,13 @@
                 </tr>
                 <tr>
                     <td>
-                       <select name="city" id="city_b">
-                            <option value="vancouver">Vancouver</option>
-                            <option value="vancouver">Surrey</option>
-                            <option value="vancouver">Richmond</option>
-                            <option value="vancouver">Langley</option>
+                       <select name="city" id="city">
+                            <option value="Courtenay">Courtenay</option>
                         </select>
                     </td>
                     <td>
-                        <select name="city" id="city_s">
-                            <option value="vancouver">Vancouver</option>
-                            <option value="vancouver">Surrey</option>
-                            <option value="vancouver">Richmond</option>
-                            <option value="vancouver">Langley</option>
+                        <select name="city" id="city">
+                            <option value="Courtenay">Courtenay</option>
                         </select>
                     </td>
                 </tr>
@@ -124,14 +118,14 @@
                 </tr>
                 <tr>
                     <td>
-                        <select name="state" id="state_b">
+                        <select name="state" id="state">
                             <option value="BC">BC</option>
                             <option value="AB">AB</option>
                             <option value="CA">CA</option>
                         </select>
                     </td>
                     <td>
-                        <select name="state" id="state_s">
+                        <select name="state" id="state">
                             <option value="BC">BC</option>
                             <option value="AB">AB</option>
                             <option value="CA">CA</option>
@@ -144,37 +138,37 @@
                 </tr>
                 <tr>
                     <td>
-                        <select name="country" id="country_b">
+                        <select name="country" id="country">
                             <option value="canada">Canada</option>
                         </select>
                     </td>
                     <td>
-                        <select name="country" id="country_s">
+                        <select name="country" id="country">
                             <option value="canada">Canada</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
-                    <td>Email address* <p id="error_email" class="error"></p></td>
+                    <td>Email address*</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td><input type="text" id="email" class="short_input" /></td>
+                    <td><input type="text" class="short_input"/></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Verify email address* <p id="error_email_verify" class="error"></p></td>
+                    <td>Verify email address*</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td><input type="text" class="short_input" id="v_email"/></td>
+                    <td><input type="text" class="short_input"/></td>
                     <td></td>
                 <tr>
             </table>
-            <input type="checkbox" id="same_shipping"/> Shipping info same as billing
+            <input type="checkbox" /> Shipping info same as billing
             
             <h1>Payment info</h1>
-            <input type="radio" name="payment" value="cc" checked="checked"/>Credit Card <p id="cc_error" class="error"></p><br />
+            <input type="radio" name="payment" value="cc" checked="checked"/>Credit Card <br />
             <img src="images/maestro.png" alt="" />
             <img src="images/mastercard.png" alt="" />
             <img src="images/visa.png" alt="" />
@@ -186,7 +180,7 @@
                     <th>Security Code*</th>
                 </tr>
                 <tr>
-                    <td><input type="text" style="width:250px" id="credit_card"/></td>
+                    <td><input type="text" style="width:250px"/></td>
                     <td>Month<select name="month" id="">
                     	<option value="">January</option>
                     	<option value="">February</option>
@@ -209,17 +203,16 @@
                     	<option value="">2020</option>
                     </select>
                     </td>
-                    <td><input type="text" style="width:100px" id="security_number"/></td>
+                    <td><input type="text" style="width:100px"/></td>
                 </tr>
             </table>
             <br />
-            <input type="radio" name="payment" value="paypal" />Paypal <br />
-            <img src="images/paypal_logo.png" alt="" width="65px"/>
+            <input type="radio" name="payment" value="paypal" />Paypal
             <div style="position:relative; width: 100%; height: 100px">
-                <div id="continue" class="button" onclick="check_inputs()">CONTINUE</div>
+            <div id="continue" class="button" onclick="goto_summary(true)">CONTINUE</div>
             </div>
        </div>
     </div>
-    <script src="order.js"></script>
+    
 </body>
 </html>

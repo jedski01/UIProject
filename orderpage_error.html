@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato|Play|Open+Sans">
     <link rel="stylesheet" href="orderstyle.css" type="text/css"/>
+    <script src="order.js"></script>
 </head>
 <body>
    
@@ -29,7 +30,7 @@
                 <tr>
                     <td>Quantity <input type="number" style="width:40px" value="1"/> <img id="refresh" src="images/refresh.png" alt="" /></td>
                     <td><h3>eGlasses</h3></td>
-                    <td><h3>$350.00</h3></td>
+                    <td><h3>$250.00</h3></td>
                 </tr>
             </table>
             <div>
@@ -40,10 +41,10 @@
                 <select name="method" style="margin-left: 25px;"> 
                     <option value="domestic_e">Domestic Economy (3-7) Bussiness days</option>
                 </select>
-                <span style="margin-left:58px">$45.00</span>
+                <span style="margin-left:58px">$15.00</span>
             </div>
             <div>
-                <h4 style="display:inline-block; margin-left:468px">Subtotal</h4> <span style="margin-left:40px;font-size:14pt;font-weight:bold">$390.00</span>
+                <h4 style="display:inline-block; margin-left:468px">Subtotal</h4> <span style="margin-left:40px;font-size:14pt;font-weight:bold">$265.00</span>
             </div>
             <div style="padding: 50px 10px 10px 10px;width:400px;text-align:center"><img src="images/PayPal.png" alt=""  style="width:300px;cursor:pointer;text-align:right"/><br /> or  <br />continue below</div>
             
@@ -149,7 +150,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Email address*</td>
+                    <td>Email address*<span class="error">Please enter your email address</span></td>
                     <td></td>
                 </tr>
                 <tr>
@@ -157,7 +158,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Verify email address*</td>
+                    <td>Verify email address*<span class="error">Email address does not match</span></td>
                     <td></td>
                 </tr>
                 <tr>
@@ -208,7 +209,9 @@
             </table>
             <br />
             <input type="radio" name="payment" value="paypal" />Paypal
-            <div id="continue" class="button">CONTINUE</div>
+            <div style="position:relative; width: 100%; height: 100px">
+            <div id="continue" class="button" onclick="goto_summary(false)">CONTINUE</div>
+            </div>
        </div>
     </div>
     
