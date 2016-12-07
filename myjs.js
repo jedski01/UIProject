@@ -13,7 +13,6 @@ var processing_text = document.getElementById("processing_text");
 var button_clicked;
 
 function response(){
-    console.log("Ready!");
     
     $.ajax({
         url: "overview.html",
@@ -23,7 +22,6 @@ function response(){
             
             var buy_button = document.getElementById("buy_button");
             buy_button.onclick = function(){
-                console.log("show buy button");
                 buy_window.style.visibility = "visible";    
             }
         }
@@ -37,7 +35,6 @@ function response(){
                 
                 var buy_button = document.getElementById("buy_button");
                 buy_button.onclick = function(){
-                    console.log("show buy button");
                     buy_window.style.visibility = "visible";    
                 }
                 
@@ -66,7 +63,6 @@ function response(){
                 
                 function show_spec(spec){
                     
-                    console.log(spec)
                     spec_title.innerHTML = spec;
 
                     switch(spec){
@@ -238,20 +234,17 @@ function response(){
                 var questions = document.getElementsByClassName("question");
                 
                 for(var x = 0 ; x < questions.length ; x++){
-                    console.log("hello");
                     questions[x].onclick = toggle_answer;
                 }
                 
                 function toggle_answer(){
                     var answer = this.nextElementSibling;
-                    console.log(answer.style.display);
                     if(answer.style.display == "none" || !answer.style.display){
                         answer.style.display = "block";
                     }
                     else{
                         answer.style.display = "none";
                     }
-                    console.log(answer.innerHTML)
                 }
                 
             }

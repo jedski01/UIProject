@@ -179,8 +179,6 @@ function do_emails_match(){
 function check_email(){
 
 	if(email.value == "" || !email_valid){
-		console.log("arey ou doing this?");
-		console.log("email value is " + email.value);
 		error_email.innerHTML = error_messages[4];
 		return false;
 	}
@@ -240,14 +238,7 @@ function check_inputs(){
 				   emails_match && 
 		           phone_valid;				   
 
-    console.log(inputs_valid);
-    console.log(check_credit_card());
-    console.log(email_valid);
-    console.log(emails_match);
-    console.log(phone_valid);
-    
 	if(inputs_valid){
-        console.log("goto summary")
 		goto_summary(false);
 	}
 }
@@ -255,18 +246,15 @@ function check_inputs(){
 checkbox_same_shipping.onclick = function(){
 	
 	if(checkbox_same_shipping.checked){
-		console.log("Copy them values!")
 		copy_values();
 	}
 	else{
-		console.log("Clear 'em values");
 		clear_shipping();
 	}
 }
 
 email.onkeyup = function(){
 	email_valid = is_email_valid(email.value);
-	console.log(email_valid);
 }
 
 v_email.onkeyup = function(){
