@@ -53,17 +53,6 @@ function goto_fillup(){
     window.location.href = "orderpage.html";
 }
 
-function place_order(){
-    processing_text.style.visibility = "visible";
-    setTimeout(goto_complete, 2000);
-}
-
-function goto_complete()
-{
-    window.location.href = "order_complete.html";
-}
-
-
 function copy_values(){
     
 	for(var x = 0 ; x < shipping_info.length ; x++){
@@ -218,7 +207,7 @@ function check_email(){
 
 function check_credit_card(){
     
-    console.log("hello");
+    
     var regex_cc = /^[0-9]{16}$/;
     var regex_sn = /^[0-9]{3}$/;
     
@@ -226,7 +215,7 @@ function check_credit_card(){
     var valid_sn = regex_sn.test(security_number.value)
     
     if(valid_cc && valid_sn){
-        cc_error.innerHTML = " ";
+        cc_error.innerHTML = "";
         return true;
         
     }
@@ -250,10 +239,16 @@ function check_inputs(){
 				   email_valid && 
 				   emails_match && 
 		           phone_valid;				   
-		
+
+    console.log(inputs_valid);
+    console.log(check_credit_card());
+    console.log(email_valid);
+    console.log(emails_match);
+    console.log(phone_valid);
+    
 	if(inputs_valid){
         console.log("goto summary")
-		goto_summary(true);
+		goto_summary(false);
 	}
 }
 
