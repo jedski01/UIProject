@@ -353,15 +353,15 @@ input[type="radio"]:checked + label.profile_link{
 
 #battery_button {
     position: absolute;
-    bottom: 100px;
-    left: 305px;
+    top: 130px;
+    left: 332px;
     
 }
 
 #mode_button {
     position: absolute;
-    top: 48px;
-    right: 82px;
+    bottom: 98px;
+    right: 33px;
 }
 
 #capture_button {
@@ -390,20 +390,20 @@ input[type="radio"]:checked + label.profile_link{
 
 #usb_button {
     position: absolute;
-    top: 50px;
-    right: 295px;
+    bottom: 80px;
+    left: 370px;
 }
 
 #arm_button {
     position: absolute;
-    bottom: 98px;
-    right: 335px;
+    top: 60px;
+    left: 125px;
 }
 
 #et_button {
     position: absolute;
-    bottom: 47px;
-    right: 350px;
+    top: 180px;
+    left: 373px;
 }
 
 #spec_title {

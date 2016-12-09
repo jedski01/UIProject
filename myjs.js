@@ -151,7 +151,9 @@ function response(){
                             info_image.innerHTML = resp;
                             
                             var eye_trackers_button = document.getElementById("et_button");
+                            var usb_button = document.getElementById("usb_button");
                             
+                            usb_button.onclick = function(){ return show_spec("USB Port");}
                             eye_trackers_button.onclick = function(){ return show_spec("Eye Trackers");}
                         }
                     })
@@ -165,23 +167,11 @@ function response(){
                         success: function(resp){
                             info_image.innerHTML = resp;
                             
-                            
-                            
                             var power_button = document.getElementById("power_button");
                             var led_button = document.getElementById("led_button");
                             
                             power_button.onclick = function(){ return show_spec("Power Button");}
                             led_button.onclick = function(){ return show_spec("LED Status Indicator");}
-                            
-                            
-                            
-                            var battery_button = document.getElementById("battery_button");
-                            var capture_button = document.getElementById("capture_button");
-                            var mode_button = document.getElementById("mode_button");
-                            
-                            battery_button.onclick = function(){ return show_spec("Battery");}
-                            
-                            mode_button.onclick = function(){ return show_spec("Mode Change Button");}
                         }
                     })
                 }
@@ -194,11 +184,13 @@ function response(){
                         success: function(resp){
                             info_image.innerHTML = resp;
                             
-                            var usb_button = document.getElementById("usb_button");
+                            var battery_button = document.getElementById("battery_button");
                             var arm_button = document.getElementById("arm_button");
+                            var mode_button = document.getElementById("mode_button");
                             
-                            usb_button.onclick = function(){ return show_spec("USB Port");}
+                            battery_button.onclick = function(){ return show_spec("Battery");}
                             arm_button.onclick = function(){ return show_spec("Arm");}
+                            mode_button.onclick = function(){ return show_spec("Mode Change Button");}
                         }
                     })
                 }
